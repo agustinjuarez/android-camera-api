@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tanukiteam.camera"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <!-- Camera Requirement -->
+    <uses-feature android:name="android.hardware.camera" />
+
+	<!-- Camera Permissions -->
+	<uses-permission android:name="android.permission.CAMERA" /> 
+	
+	<!-- Video Permissions -->
+	<uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    
+    <!-- Audio Permission -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />	
+	
+    <!-- Storage Permission -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    
+    <!-- Features -->
+    <uses-feature android:name="android.hardware.camera.flash" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+        
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".CameraAPIActivity"
+            android:label="@string/app_name" 
+			android:theme="@android:style/Theme.NoTitleBar" >          	                                              
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".CameraCustomGalleryActivity" 
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar" >
+		    <intent-filter>
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		    </intent-filter>
+		</activity>                    
+    </application>
+
+</manifest>

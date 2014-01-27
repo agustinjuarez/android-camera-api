@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="55dp" 
+			android:background="@drawable/background_gradient_orange"
+			android:id="@+id/relativeLayout">
+
+        <com.tanukiteam.camera.widget.ConfirmButton
+            android:id="@+id/btnPhotos"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginTop="7dp"
+	        android:layout_marginBottom="5dp"
+	        android:minWidth="100px"
+	        android:text="@string/Photos" 
+	        android:layout_marginLeft="5dp"
+	        android:visibility="invisible" />
+
+	     <TextView
+	         android:id="@+id/textView1"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="@string/gallery" 
+	         android:textStyle="bold" 
+	         android:textColor="@color/white"
+	         android:layout_marginLeft="120dp"
+	         android:layout_alignParentLeft="true" 
+	         android:textSize="25dp"
+	         android:layout_marginTop="10dp"
+	         android:layout_marginBottom="7dp"/>
+
+	     <com.tanukiteam.camera.widget.CancelButton
+	         android:id="@+id/btnCancel"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentRight="true"
+	         android:layout_marginTop="7dp"
+	         android:layout_marginBottom="5dp"
+	         android:text="@string/cancel"
+	         android:layout_marginRight="5dp"
+	         android:minWidth="100px"/>
+
+     </RelativeLayout>
+
+    <GridView
+        android:id="@+id/PhoneImageGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="3dp"
+        android:numColumns="4"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="0dp" >
+    </GridView>
+
+   
+
+</RelativeLayout>

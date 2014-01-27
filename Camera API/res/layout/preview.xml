@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyt_master"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    >
+    
+    <LinearLayout     
+        android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="20dp"
+    	android:layout_marginBottom="20dp">
+        
+        <ImageButton
+            android:id="@+id/btn_flash"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.02"
+            android:background="@null"            
+            android:src="@drawable/flash_auto"            
+            android:visibility="visible" />    
+            
+        <Chronometer
+	        android:id="@+id/chronometer"
+	        android:format="%s"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textSize="20sp"
+	        android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/btn_rotate"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.02"
+            android:background="@null"            
+            android:src="@drawable/camera_rotate"            
+            android:visibility="visible" />         
+        
+    </LinearLayout>
+
+	<FrameLayout
+	  android:id="@+id/frame"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_weight="1">    
+    
+			<FrameLayout
+			  android:id="@+id/camera_preview"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:layout_weight="1"
+			  />
+			  		
+			<ImageView 
+			  android:id="@+id/image_preview"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:layout_weight="1"
+			  android:scaleType="fitXY" 
+			  android:visibility="gone"  />
+			    
+
+			<ImageView
+			    android:id="@+id/video_preview_img"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:scaleType="fitXY"
+			    android:visibility="gone" />
+			
+			<VideoView
+		      android:id="@+id/video_preview"
+		      android:layout_width="400dp"
+		      android:layout_height="400dp"
+		      android:layout_weight="1"
+			  android:visibility="gone"
+			  android:layout_gravity="center"/>	
+			  
+		       
+		   <ImageButton
+		       android:id="@+id/button_play"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_gravity="center"       
+		       android:background="@null"            
+		       android:src="@drawable/play"            
+		       android:visibility="gone" />
+	
+	</FrameLayout>
+   <ImageButton
+       android:id="@+id/button_capture"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"       
+       android:background="@null"            
+       android:src="@drawable/camera_take_icon"            
+       android:visibility="visible" />	
+       
+   <ImageButton
+       android:id="@+id/button_retake"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"       
+       android:background="@null"            
+       android:src="@drawable/retake_icon" 
+       android:layout_marginTop="25dp"           
+       android:visibility="gone" />	   
+
+    <LinearLayout     
+        android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal">
+    
+	   <ImageButton
+	       android:id="@+id/btn_close"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_gravity="center_vertical"       
+	       android:background="@null"            
+	       android:src="@drawable/close_white"            
+	       android:visibility="visible" />	        
+        
+	   <ImageButton
+	       android:id="@+id/btn_picture"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_gravity="center_vertical"       
+	       android:background="@null"            
+	       android:src="@drawable/camera_white_active"            
+	       android:visibility="visible" />	
+	       
+	   <ImageButton
+	       android:id="@+id/btn_video"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_gravity="center_vertical"
+	       android:background="@null"            
+	       android:src="@drawable/video_icon"            
+	       android:visibility="visible" />
+	   
+	   <ImageButton
+	       android:id="@+id/btn_audio"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_gravity="center_vertical"
+	       android:background="@null"            
+	       android:src="@drawable/audio_white"            
+	       android:visibility="visible" />	        
+        
+	   <ImageButton
+	       android:id="@+id/btn_roll"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_gravity="center_vertical"    
+	       android:background="@null"            
+	       android:src="@drawable/camera_roll_icon"            
+	       android:visibility="visible" />	
+	       
+	   <ImageButton
+	       android:id="@+id/btn_save"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_gravity="center_vertical"
+	       android:background="@null"            
+	       android:src="@drawable/save_white"            
+	       android:visibility="visible" />		   		   	   
+    </LinearLayout>
+</LinearLayout>

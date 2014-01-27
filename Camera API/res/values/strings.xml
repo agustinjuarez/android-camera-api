@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, CameraAPIActivity!</string>
+    <string name="app_name">CameraAPI</string>
+    <string name="cancel">Cancel</string>
+    <string name="gallery">Gallery</string>
+    <string name="Photos">Photos</string>
+
+</resources>
